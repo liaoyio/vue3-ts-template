@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"useDefineForClassFields": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		// "allowJs": false,
+		// element 类型提示
+		"types": ["element-plus/global", "vite/client"],
+		"strict": true /* Enable all strict type-checking options. */,
+		"jsx": "preserve",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		// 跳过第三方库检查，解决打包失败
+		"skipLibCheck": true,
+		"lib": ["esnext", "dom"],
+		// 解析非相对模块名的基准目录
+		"baseUrl": "./",
+		// 模块名到基于 baseUrl 的路径映射的列表。
+		"paths": {
+			// "@": ["src"],
+			"@/*": ["./src/*"],
+			"#/*": ["./types/*"]
+		}
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"vite.config.ts",
+		"vite/**/*.ts",
+		"types/**/*.ts",
+		"src/main.ts",
+		"src/**/*.js",
+		"src/**/**/*.js"
+	],
+	"exclude": ["node_modules", "dist", "**/*.js"]
+}
