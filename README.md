@@ -20,7 +20,7 @@
 - **克隆项目**
 
 ```shell
-git clone git@github.com:montplex/engula-web-client.git
+git clone 
 ```
 
 - **安装依赖：**
